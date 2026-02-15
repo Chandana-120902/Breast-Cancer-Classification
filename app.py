@@ -102,7 +102,7 @@ def create_sample_dataset():
 def get_dataset_info():
     """Get information about the training dataset"""
     try:
-        df = pd.read_csv(r'breast-cancer.csv')
+        df = pd.read_csv('breast-cancer.csv')
         total_samples = len(df)
         total_features = len(df.columns) - 2  # Exclude id and diagnosis
         
